@@ -1,0 +1,6 @@
+{
+  "name": "PWA",
+  "display": "standalone",
+  "background_color": "#FF0000",
+  "theme_color": "#FF0000"
+}
