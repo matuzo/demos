@@ -7,7 +7,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/?start_url",
+  "start_url": "/theme-color.html",
   "scope": "/",
   "display": "standalone",
   "background_color": "#00ff00",
