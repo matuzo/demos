@@ -4,37 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>New document</title>
+  <title>theme-color: #319197</title>
   
-  <style>
-    * { box-sizing: border-box; }
-    
-  </style>
-
   <link rel="manifest" href="manifest.json" />
 
-  <!-- <meta name="theme-color" content="#FA0000"> -->
-  <!-- <meta name="theme-color" content="#ecd96f" media="(prefers-color-scheme: light)"> -->
-<!-- 
-  <meta name="theme-color" content="brown" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="blue" media="(prefers-color-scheme: light)"> -->
-<!-- 
-  <meta name="theme-color" content="brown" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="blue"> -->
-
-  <meta name="theme-color" content="blue" media="(prefers-color-scheme: light)"> 
-  <meta name="theme-color" content="brown">
-
-
-<!-- <meta name="theme-color" 
-  content="#0b3e05" 
-  media="(prefers-color-scheme: dark)"> -->
+  <meta name="theme-color" content="#319197">
   
 </head>
 <body>
-  <h1>My Document</h1>
+  <h1>theme-color: <span class="color" aria-live="assertive">#319197</span></h1>
+
+  <label for="color">Select color</label>
+  <select id="color">
+    <option value="#319197">#319197</option>
+    <option value="#0000FF">#0000FF</option>
+    <option value="#00FF00">#00FF00</option>
+    <option value="#FF0000">#FF0000</option>
+    <option value="red">red</option>
+    <option value="#FE0000">#FE0000</option>
+    <option value="#FD0000">#FD0000</option>
+    <option value="#FC0000">#FC0000</option>
+    <option value="#FB0000">#FB0000</option>
+    <option value="#FA0000">#FA0000</option>
+  </select>
 
   <script>
+    document.querySelector('select').addEventListener('change', e => {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', e.target.value)
+      document.querySelector('.color').textContent = e.target.value;
+    })
+
+
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("/sw.js");
     }
