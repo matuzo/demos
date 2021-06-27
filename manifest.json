@@ -2,13 +2,13 @@
   "name": "My PWA",
   "icons": [
     {
-      "src": "https://via.placeholder.com/144/00ff00",
+      "src": "https://via.placeholder.com/144/fc7519",
       "sizes": "144x144",
       "type": "image/png"
     }
   ],
   "start_url": "/theme-color-darkmode.html",
   "display": "standalone",
-  "background_color": "hsl(24.3, 97.4%, 54.3%)",
-  "theme_color": "hsl(24.3, 97.4%, 54.3%)"
+  "background_color": "#fc7519",
+  "theme_color": "#fc7519"
 }
