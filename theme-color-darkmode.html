@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Dark Mode Demo</title>
+  
+  <link rel="manifest" href="manifest.json" />
+
+  <meta name="theme-color" content="#319197" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#872e4e" media="(prefers-color-scheme: dark)">
+
+  <style>
+    body {
+      background: #319197;
+      color: #fff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #872e4e;
+        color: #fff;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>Dark Mode Demo</h1>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js");
+    }
+  </script>
+  
+</body>
+</html>
