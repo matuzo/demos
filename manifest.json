@@ -7,9 +7,8 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/theme-color.html",
-  "scope": "/",
+  "start_url": "/theme-color-darkmode.html",
   "display": "standalone",
-  "background_color": "#00ff00",
-  "theme_color": "#00ff00"
+  "background_color": "hsl(24.3, 97.4%, 54.3%)",
+  "theme_color": "hsl(24.3, 97.4%, 54.3%)"
 }
