@@ -34,6 +34,8 @@
     document.querySelector('select').addEventListener('change', e => {
       document.querySelector('meta[name="theme-color"]').setAttribute('content', e.target.value)
       document.querySelector('.color').textContent = e.target.value;
+      document.body.style.color = e.target.value;
+
     })
 
 
